@@ -187,4 +187,7 @@ form .btn2 input[type="button"]{
   font-weight: 500;
   cursor: pointer;
 }
-
+#err {
+    color: #ff0000;
+    font-weight: 20px;
+}
