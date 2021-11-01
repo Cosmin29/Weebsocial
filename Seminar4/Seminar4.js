@@ -10,7 +10,7 @@ signupLink = (() => {
 });
 
 
-cancelLink = (()=> {
+cancelLink = (() => {
    const div = document.getElementById('err');
     const p = document.createElement('p');
     p.innerText = 'Warning! You are about to reset your inputs. Are you sure you want to continue ?';
