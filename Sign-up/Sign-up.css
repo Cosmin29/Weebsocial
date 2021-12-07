@@ -53,8 +53,40 @@ body {
 	border-radius: 5px;
 }
 
+.slide-controls .slide {
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+	line-height: 48px;
+	cursor: pointer;
+	z-index: 1;
+	transition: all 0.6s ease;
+}
+
+.slide-controls .slider-tab {
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	left: 0;
+	z-index: 0;
+	border-radius: 5px;
+	background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+	transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.slide-controls label.signup {
+	color: #000;
+}
+
 input[type="radio"] {
 	display: none;
+}
+
+#signup:checked ~ .slider-tab {
+	left: 50%;
 }
 
 #signup:checked ~ label.signup {
@@ -62,11 +94,25 @@ input[type="radio"] {
 	cursor: default;
 	user-select: none;
 }
+
+#signup:checked ~ label.login {
+	color: #000;
+}
+
 #cancel:checked ~ label.cancel {
 	color: #fff;
 	cursor: default;
 	user-select: none;
 }
+
+#login:checked ~ label.signup {
+	color: #000;
+}
+#login:checked ~ label.login {
+	cursor: default;
+	user-select: none;
+}
+
 .wrapper .form-container {
 	width: 100%;
 	overflow: hidden;
@@ -143,6 +189,21 @@ form .btn .btn-layer {
 }
 form .btn:hover .btn-layer {
 	left: 0;
+}
+
+form .btn input[type="submit"] {
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	position: relative;
+	background: none;
+	border: none;
+	color: #fff;
+	padding-left: 0;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: 500;
+	cursor: pointer;
 }
 
 form .btn input[type="button"] {
