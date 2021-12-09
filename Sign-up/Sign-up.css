@@ -73,7 +73,7 @@ body {
 	left: 0;
 	z-index: 0;
 	border-radius: 5px;
-	background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+	background: -webkit-linear-gradient(left, #ab1e3b, #6a164c, #2d5d9e);
 	transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -96,7 +96,7 @@ input[type="radio"] {
 }
 
 #signup:checked ~ label.login {
-	color: #000;
+	color: #999;
 }
 
 #cancel:checked ~ label.cancel {
@@ -106,7 +106,7 @@ input[type="radio"] {
 }
 
 #login:checked ~ label.signup {
-	color: #000;
+	color: #999;
 }
 #login:checked ~ label.login {
 	cursor: default;
@@ -160,10 +160,11 @@ form .field input:focus::placeholder {
 .form-inner form .signup-link {
 	text-align: center;
 	margin-top: 30px;
+	color: lightgrey;
 }
 .form-inner form .pass-link a,
 .form-inner form .signup-link a {
-	color: #fa6742;
+	color: #da3535;
 	text-decoration: none;
 }
 .form-inner form .pass-link a:hover,

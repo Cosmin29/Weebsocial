@@ -13,46 +13,66 @@
       
       <div class="wrapper">
          <div class="title-text">
+            <div class="title login">
+               Login 
+            </div>
             <div class="title signup">
-               Signup Form
+               Signup 
             </div>
          </div>
-            
-            <div class="form-inner">
 
-               <form action="#" class="signup">
-                   <div class="field">
-                       <input type="text" placeholder="Name" required>
-                   </div>
+         <div class="form-container">
+            <div class="slide-controls">
+               <input type="radio" name="slide" id="login" checked onclick = " loginBtn()">
+               <input type="radio" name="slide" id="signup" onclick = "signupBtn()">
+               <label for="login" class="slide login">Login</label>
+               <label for="signup" class="slide signup">Signup</label>
+               <div class="slider-tab"></div>
+            </div>
+
+            <div class="form-inner">
+               <form action="#" class="login">
                   <div class="field">
                      <input type="text" placeholder="Email Address" required>
                   </div>
                   <div class="field">
                      <input type="password" placeholder="Password" required>
                   </div>
-                  <div class="field">
-                     <input type="password" placeholder="Confirm password" required>
+                  <div class="pass-link">
+                     <a href="#">Forgot password?</a>
                   </div>
                   <div class="field btn">
                      <div class="btn-layer"></div>
-                     <input type="button" value="Sign-up" onclick="signupLink()">
-                     
+                     <input type="submit" value="Login">
+                  </div>
+                  <div class="signup-link">
+                     Not a member? <a href='#' onclick="signupBtn()">Signup now</a>
+         
                   </div>
                </form>
 
-               <form action="#" class="cancel">
-                    <div class="field btn2">
-                        <div class="btn-layer2"></div>
-                        <input type="button" value="Cancel" onclick="cancelLink()">
-                    </div>
-                    <div id='err'>
-                        <p></p>
-                    </div>
-               </form>
+               <form action="#" class="signup">
+                  <div class="field">
+                     <input type="text" placeholder="Name" required>
+                  </div>
+                 <div class="field">
+                    <input type="text" placeholder="Email Address" required>
+                 </div>
+                 <div class="field">
+                    <input type="password" placeholder="Password" required>
+                 </div>
+                 <div class="field">
+                    <input type="password" placeholder="Confirm password" required>
+                 </div>
+                 <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="button" value="Sign-up" onclick="signupBtnOnTheForm()">
+                  </div>
+              </form>
 
             </div>
-         
-        </div>
+         </div>
+      </div>
 
       </div>
 
