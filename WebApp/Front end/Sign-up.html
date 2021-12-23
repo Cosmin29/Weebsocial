@@ -43,30 +43,30 @@
                   </div>
                   <div class="field btn">
                      <div class="btn-layer"></div>
-                     <input type="submit" value="Login">
+                     <input type="submit" value="Login" onclick="login()">
                   </div>
                   <div class="signup-link">
-                     Not a member? <a href='#' onclick="signupBtn()">Signup now</a>
+                     Not a member? <a href='#slide-controls' onclick="signupLink()">Signup now</a>
          
                   </div>
                </form>
 
                <form action="#" class="signup">
                   <div class="field">
-                     <input type="text" placeholder="Name" required>
+                     <input name="name" type="text" placeholder="Name" required/>
                   </div>
+
                  <div class="field">
-                    <input type="text" placeholder="Email Address" required>
+                    <input name="email" type="text" placeholder="Email Address" required/>
                  </div>
+
                  <div class="field">
-                    <input type="password" placeholder="Password" required>
+                    <input name="password" type="password" placeholder="Password" required/>
                  </div>
-                 <div class="field">
-                    <input type="password" placeholder="Confirm password" required>
-                 </div>
+
                  <div class="field btn">
                     <div class="btn-layer"></div>
-                    <input type="button" value="Sign-up" onclick="signupBtnOnTheForm()">
+                    <input type="button" value="Sign-up" onclick="signup()">
                   </div>
               </form>
 
@@ -76,6 +76,8 @@
 
       </div>
 
+      <script src="login.js"></script>
+      <script src="signup.js"></script>
       <script src="Sign-up.js"></script>
    
     </body>
