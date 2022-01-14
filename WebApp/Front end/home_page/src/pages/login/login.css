@@ -5,16 +5,33 @@
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
-html,
-body {
+
+.loginLeft{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: -80%;
+  margin-top: -15%;
+}
+
+.loginLogo {
+  font-size: 50px;
+  font-weight: 800;
+  color: #1775ee;
+  margin-bottom: 10px;
+}
+
+.body {
 	display: grid;
-	height: 100%;
+	height: 1000px;
 	width: 100%;
 	place-items: center;
-	background-image: url('https://scontent.fotp3-3.fna.fbcdn.net/v/t39.30808-6/269768234_2022407087925033_2087954060522527606_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=k69DGNq7apIAX9Ll-cZ&_nc_ht=scontent.fotp3-3.fna&oh=00_AT9BQSfoH-mfJWYyfvtJWKRuvDxCWIEnVpT_cigsBwqLtg&oe=61E50A86');
+	background-image: url('');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
+    margin-top: 0%;
 }
 ::selection {
 	background: #4a1b79;
@@ -27,7 +44,7 @@ body {
 	padding: 55px;
 	border-radius: 5px;
 	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
-	margin-top: -80px;
+	margin-top: -20%;
 }
 .wrapper .title-text {
 	display: flex;

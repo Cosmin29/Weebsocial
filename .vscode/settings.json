@@ -1,5 +1,7 @@
 {
-    "cSpell.ignoreWords": [
-        "dbfile"
-    ]
+    "emmet.includeLanguages": {
+       "javascript": "javascriptreact"
+    },
+    "prettier.jsxBracketSameLine": true,
+    "prettier.jsxSingleQuote": true
 }
