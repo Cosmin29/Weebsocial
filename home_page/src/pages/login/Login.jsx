@@ -4,9 +4,6 @@ import "./login.css";
 export default function Login() {
     return(
         <div className="body">
-            <div className="loginLeft">
-                <h3 className="loginLogo">Weebsocial</h3>
-            </div>
             <div className="wrapper">
                 <div className="title-text">
                     <div className="title login">Login </div>

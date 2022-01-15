@@ -1,6 +1,7 @@
 .profile {
 	display: flex;
 	color: rgba(255, 255, 255, 0.774);
+	background-color: #15202B; 
 }
 
 .profileRight {
