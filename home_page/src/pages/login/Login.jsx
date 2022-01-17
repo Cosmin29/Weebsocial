@@ -1,6 +1,5 @@
 import "./login.css";
-
-
+import {Link} from "react-router-dom";
 export default function Login() {
     return(
         <div className="body">
@@ -28,11 +27,13 @@ export default function Login() {
                                  <input type="password" placeholder="Password" required />
                             </div>
                             <div className="pass-link">
-                                <a href="#">Forgot password?</a>
+                                <a href="#slide-controls">Forgot password?</a>
                             </div>
                             <div className="field btn">
-                                <div className="btn-layer"></div>
-                                <input type="submit" value="Login"/>
+                                <Link to="/" style={{textDecoration:"none"}}>
+                                    <div className="btn-layer"></div>
+                                    <input type="submit" value="Login"/>
+                                </Link>
                             </div>
                             <div className="signup-link">
                                 Not a member? <a href='#slide-controls'>Signup now</a>

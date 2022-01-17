@@ -1,11 +1,13 @@
 import "./topbar.css";
 import { Search, Person, Chat, Notifications } from "@material-ui/icons";
-
+import {Link} from "react-router-dom";
 export default function Topbar() {
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
-        <span className="logo">Weebsocial</span>
+        <Link to='/' style={{textDecoration: 'none'}}>
+          <img className="logoPic" src="/assets/weebasocial.png" alt="" />
+        </Link>
       </div>
       <div className="topbarCenter">
         <div className="searchbar">
@@ -35,7 +37,9 @@ export default function Topbar() {
             <span className="topbarIconBadge">1</span>
           </div>
         </div>
-        <img src="/assets/person/cosmin.jpg" alt="" className="topbarImg"/>
+        <Link to='/profile/:Cosmin Mihai' style={{textDecoration: 'none'}}>
+          <img src="/assets/person/cosmin.jpg" alt="" className="topbarImg"/>
+        </Link>
       </div>
     </div>
   );

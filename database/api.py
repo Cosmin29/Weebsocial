@@ -7,7 +7,7 @@ from repository import get_connection, create_user, get_email_and_password
 app = Flask("MyFirstUserManagementApp")
 CORS(app)
 
-DB_FILE = 'WebApp/database/users.db'
+DB_FILE = 'database/users.db'
 
 
 @app.route('/api/v1/users', methods=["POST"])
@@ -89,4 +89,4 @@ def sign_in():
 
 
 if __name__ == "__main__":
-    app.run(port=3002, debug=True)
+    app.run(port=3000, debug=True)
