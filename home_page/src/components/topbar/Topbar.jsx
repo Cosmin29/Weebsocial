@@ -6,7 +6,7 @@ export default function Topbar() {
     <div className="topbarContainer">
       <div className="topbarLeft">
         <Link to='/' style={{textDecoration: 'none'}}>
-          <img className="logoPic" src="/assets/weebasocial.png" alt="" />
+          <img className="logoPic" src="/assets/Weebsocial-logo.png" alt="" />
         </Link>
       </div>
       <div className="topbarCenter">
