@@ -11,8 +11,7 @@ body {
 	height: 100%;
 	width: 100%;
 	place-items: center;
-	background-image: url('https://srcwap.com/wp-content/uploads/2021/09/landscape-minimal-panaromic-8k-97-2560x1440.jpg');
-	background-repeat: no-repeat;
+	background-image: url('https://images.unsplash.com/photo-1449156733864-dd5471bb7427?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
 	background-attachment: fixed;
 	background-size: 100% 100%;
 }
