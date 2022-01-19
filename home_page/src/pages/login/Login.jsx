@@ -1,6 +1,8 @@
 import "./login.css";
 import {Link} from "react-router-dom";
+import {signup} from "./signup";
 export default function Login() {
+
     return(
         <div className="body">
             <div className="wrapper">
@@ -11,7 +13,7 @@ export default function Login() {
 
                 <div className="form-container">
                     <div className="slide-controls">
-                        <input type="radio" name="slide" id="login" defaultChecked/>
+                        <input type="radio" name="slide" id="login" defaultChecked />
                         <input type="radio" name="slide" id="signup"/>
                         <label htmlFor="login" className="slide login">Login</label>
                         <label htmlFor="signup" className="slide signup">Signup</label>
@@ -30,9 +32,9 @@ export default function Login() {
                                 <a href="#slide-controls">Forgot password?</a>
                             </div>
                             <div className="field btn">
-                                <Link to="/" style={{textDecoration:"none"}}>
+                                <Link to="/home" style={{textDecoration:"none"}}>
                                     <div className="btn-layer"></div>
-                                    <input type="submit" value="Login"/>
+                                    <input type="submit" onClick={signup} value="Login"/>
                                 </Link>
                             </div>
                             <div className="signup-link">
@@ -61,6 +63,9 @@ export default function Login() {
                     </div>
                 </div>
             </div>
+            
         </div>
-    );  
+        
+    );
 }   
+

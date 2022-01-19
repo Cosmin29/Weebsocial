@@ -69,7 +69,6 @@ def sign_in():
         }
         return error, 400
 
-    # sign in
     try:
         conn = get_connection(DB_FILE)
         user = get_email_and_password(conn, email)
@@ -89,4 +88,4 @@ def sign_in():
 
 
 if __name__ == "__main__":
-    app.run(port=3000, debug=True)
+    app.run(port=3002, debug=True)
