@@ -50,7 +50,7 @@ export default function Rightbar({ profile }) {
               alt=""
               className="rightbarFollowingImg"
             />
-            <span className="rightbarFollowingName">John Carter</span>
+            <span className="rightbarFollowingName">Slash</span>
           </div>
           <div className="rightbarFollowing">
             <img
@@ -58,7 +58,7 @@ export default function Rightbar({ profile }) {
               alt=""
               className="rightbarFollowingImg"
             />
-            <span className="rightbarFollowingName">John Carter</span>
+            <span className="rightbarFollowingName">Serghei Mizil</span>
           </div>
           <div className="rightbarFollowing">
             <img
@@ -66,7 +66,7 @@ export default function Rightbar({ profile }) {
               alt=""
               className="rightbarFollowingImg"
             />
-            <span className="rightbarFollowingName">John Carter</span>
+            <span className="rightbarFollowingName">Jeff Bezos</span>
           </div>
           <div className="rightbarFollowing">
             <img
@@ -74,7 +74,7 @@ export default function Rightbar({ profile }) {
               alt=""
               className="rightbarFollowingImg"
             />
-            <span className="rightbarFollowingName">John Carter</span>
+            <span className="rightbarFollowingName">Elon Musk</span>
           </div>
           <div className="rightbarFollowing">
             <img
@@ -82,7 +82,7 @@ export default function Rightbar({ profile }) {
               alt=""
               className="rightbarFollowingImg"
             />
-            <span className="rightbarFollowingName">John Carter</span>
+            <span className="rightbarFollowingName">Giorno Giovanna</span>
           </div>
           <div className="rightbarFollowing">
             <img
@@ -90,7 +90,7 @@ export default function Rightbar({ profile }) {
               alt=""
               className="rightbarFollowingImg"
             />
-            <span className="rightbarFollowingName">John Carter</span>
+            <span className="rightbarFollowingName">Goku</span>
           </div>
         </div>
       </>

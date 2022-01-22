@@ -7,47 +7,47 @@ export const Users = [
 	{
 		id             : 2,
 		profilePicture : 'person/2.jpeg',
-		username       : 'Janell Shrum'
+		username       : 'Slash'
 	},
 	{
 		id             : 3,
 		profilePicture : 'person/3.jpeg',
-		username       : 'Alex Durden'
+		username       : 'Serghei Mizil'
 	},
 	{
 		id             : 4,
 		profilePicture : 'person/4.jpeg',
-		username       : 'Dora Hawks'
+		username       : 'Jeff Bezos'
 	},
 	{
 		id             : 5,
 		profilePicture : 'person/5.jpeg',
-		username       : 'Thomas Holden'
+		username       : 'Elon Musk'
 	},
 	{
 		id             : 6,
 		profilePicture : 'person/6.jpeg',
-		username       : 'Shirley Beauchamp'
+		username       : 'Connor McGregor'
 	},
 	{
 		id             : 7,
 		profilePicture : 'person/7.jpeg',
-		username       : 'Travis Bennett'
+		username       : 'Giorno Giovana'
 	},
 	{
 		id             : 8,
 		profilePicture : 'person/8.jpeg',
-		username       : 'Kristen Thomas'
+		username       : 'Eren Yeager'
 	},
 	{
 		id             : 9,
 		profilePicture : 'person/9.jpeg',
-		username       : 'Gary Duty'
+		username       : 'John Cena'
 	},
 	{
 		id             : 10,
 		profilePicture : 'person/10.jpeg',
-		username       : 'Safak Kocaoglu'
+		username       : 'Goku'
 	}
 ];
 

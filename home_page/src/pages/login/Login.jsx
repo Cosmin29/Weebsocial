@@ -1,25 +1,24 @@
 import "./login.css";
 import {Link} from "react-router-dom";
-import {signup} from "./signup";
+import {signin} from "./signin";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faGoogle,
+  faInstagram
+} from "@fortawesome/free-brands-svg-icons";
+
 export default function Login() {
 
     return(
         <div className="body">
+                <img className="logo" src="/assets/Weebsocial-logo.png" alt="" />
             <div className="wrapper">
                 <div className="title-text">
-                    <div className="title login">Login </div>
-                    <div className="title signup">Signup </div>
+                    <div className="title login">Login</div>
                 </div>
 
                 <div className="form-container">
-                    <div className="slide-controls">
-                        <input type="radio" name="slide" id="login" defaultChecked />
-                        <input type="radio" name="slide" id="signup"/>
-                        <label htmlFor="login" className="slide login">Login</label>
-                        <label htmlFor="signup" className="slide signup">Signup</label>
-                        <div className="slider-tab"></div>
-                    </div>
-
                     <div className="form-inner">
                         <form action="#" className="login">
                             <div className="field">
@@ -29,43 +28,35 @@ export default function Login() {
                                  <input type="password" placeholder="Password" required />
                             </div>
                             <div className="pass-link">
-                                <a href="#slide-controls">Forgot password?</a>
+                                <a href="#">Forgot password?</a>
                             </div>
                             <div className="field btn">
                                 <Link to="/home" style={{textDecoration:"none"}}>
                                     <div className="btn-layer"></div>
-                                    <input type="submit" onClick={signup} value="Login"/>
+                                    <input type="submit" onClick={signin} value="Login"/>
                                 </Link>
                             </div>
                             <div className="signup-link">
-                                Not a member? <a href='#slide-controls'>Signup now</a>
+                                Not a member ? Signup now with:
                             </div>
-                        </form>
-
-                        <form action="#" className="signup">
-                            <div className="field">
-                                <input name="name" type="text" placeholder="Name" required/>
-                            </div>
-
-                            <div className="field">
-                                <input name="email" type="text" placeholder="Email Address" required/>
-                            </div>
-
-                            <div className="field">
-                                <input name="password" type="password" placeholder="Password" required/>
-                            </div>
-
-                            <div className="field btn">
-                                <div className="btn-layer"></div>
-                                <input type="button" value="Sign-up" />
+                            <div className="social-container">
+                                <Link to="/home" style={{textDecoration:"none"}}>
+                                    <div className="facebook social">
+                                        <FontAwesomeIcon icon={faFacebook} size="3x" />
+                                    </div>
+                                    <div className="google social">
+                                        <FontAwesomeIcon icon={faGoogle} size="3x" />
+                                    </div>
+                                    <div className="instagram social">
+                                        <FontAwesomeIcon icon={faInstagram} size="3x" />
+                                    </div>
+                                </Link>
                             </div>
                         </form>
                     </div>
                 </div>
+                
             </div>
-            
         </div>
-        
     );
 }   
-
