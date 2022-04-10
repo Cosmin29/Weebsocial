@@ -9,7 +9,7 @@ export default function Post({ post }) {
   const PF = process.env.React_APP_Public_Folder;
 
   const likeHandler = () => {
-    setLike(isLiked ? like - 1 : like + 1)
+    setLike(like + 1)
     setIsLiked(!isLiked)
   }
   return (

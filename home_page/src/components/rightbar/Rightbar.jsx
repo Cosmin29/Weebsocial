@@ -9,10 +9,10 @@ export default function Rightbar({ profile }) {
         <div className="birthdayContainer">
           <img className="birthdayImg" src="assets/gift.png" alt="" />
           <span className="birthdayText">
-            <b>Pola Foster</b> and <b>3 other friends</b> have a birhday today.
+            <b>Person 1</b> and <b>3 other friends</b> have a birhday today.
           </span>
         </div>
-        <img className="rightbarAd" src="assets/ad.png" alt="" />
+        <img className="rightbarAd" src="assets/National-Burger-Day.png" alt="" />
         <h4 className="rightbarTitle">Online Friends</h4>
         <ul className="rightbarFriendList">
           {Users.map((u) => (
@@ -46,51 +46,51 @@ export default function Rightbar({ profile }) {
         <div className="rightbarFollowings">
           <div className="rightbarFollowing">
             <img
-              src={`${PF}person/1.jpeg`}
+              src={`${PF}person/Person 1.jpeg`}
               alt=""
               className="rightbarFollowingImg"
             />
-            <span className="rightbarFollowingName">Slash</span>
+            <span className="rightbarFollowingName">User 1</span>
           </div>
           <div className="rightbarFollowing">
             <img
-              src={`${PF}person/2.jpeg`}
+              src={`${PF}person/Person 2.jpeg`}
               alt=""
               className="rightbarFollowingImg"
             />
-            <span className="rightbarFollowingName">Serghei Mizil</span>
+            <span className="rightbarFollowingName">User 2</span>
           </div>
           <div className="rightbarFollowing">
             <img
-              src={`${PF}person/3.jpeg`}
+              src={`${PF}person/Person 3.jpeg`}
               alt=""
               className="rightbarFollowingImg"
             />
-            <span className="rightbarFollowingName">Jeff Bezos</span>
+            <span className="rightbarFollowingName">User 3</span>
           </div>
           <div className="rightbarFollowing">
             <img
-              src={`${PF}person/4.jpeg`}
+              src={`${PF}person/Person 4.jpeg`}
               alt=""
               className="rightbarFollowingImg"
             />
-            <span className="rightbarFollowingName">Elon Musk</span>
+            <span className="rightbarFollowingName">User 4</span>
           </div>
           <div className="rightbarFollowing">
             <img
-              src={`${PF}person/5.jpeg`}
+              src={`${PF}person/Person 5.jpeg`}
               alt=""
               className="rightbarFollowingImg"
             />
-            <span className="rightbarFollowingName">Giorno Giovanna</span>
+            <span className="rightbarFollowingName">User 5</span>
           </div>
           <div className="rightbarFollowing">
             <img
-              src={`${PF}person/6.jpeg`}
+              src={`${PF}person/Person 6.jpeg`}
               alt=""
               className="rightbarFollowingImg"
             />
-            <span className="rightbarFollowingName">Goku</span>
+            <span className="rightbarFollowingName">User 6</span>
           </div>
         </div>
       </>
