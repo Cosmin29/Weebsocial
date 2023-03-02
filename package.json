@@ -15,10 +15,10 @@
     "styled-components": "^5.3.3",
     "yarn": "^1.22.17"
   },
-  "name": "G611-WebProgrammingApp-C.M.O",
+  "name": "Weebsocial",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Cosmin29/G11-WebAppProgramming-C.M.O.git",
+  "repository": "https://github.com/Cosmin29/Weebsocial.git",
   "author": "Cosmin29 <73159321+Cosmin29@users.noreply.github.com>",
   "license": "MIT"
 }
