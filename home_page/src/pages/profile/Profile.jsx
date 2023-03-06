@@ -1,11 +1,11 @@
-import "./profile.css";
 import Topbar from "../../components/topbar/Topbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Feed from "../../components/feed/Feed";
 import Rightbar from "../../components/rightbar/Rightbar";
+import "./profile.css";
 
 export default function Profile() {
-  const PF = process.env.React_APP_Public_Folder;
+  const publicFolder = process.env.React_APP_Public_Folder;
   return (
     <>
       <Topbar />
@@ -16,12 +16,12 @@ export default function Profile() {
             <div className="profileCover">
               <img
                 className="profileCoverImg"
-                src = {`${PF}post/3817488.jpg`}
+                src = {`${publicFolder}post/3817488.jpg`}
                 alt=""
               />
               <img
                 className="profileUserImg"
-                src = {`${PF}person/cosmin.jpg`}
+                src = {`${publicFolder}person/cosmin.jpg`}
                 alt=""
               />
             </div>

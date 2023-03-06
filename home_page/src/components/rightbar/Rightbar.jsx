@@ -1,6 +1,6 @@
-import "./rightbar.css";
 import { Users } from "../../dummyData";
 import Online from "../online/Online";
+import "./rightbar.css";
 
 export default function Rightbar({ profile }) {
   const HomeRightbar = () => {
@@ -9,14 +9,14 @@ export default function Rightbar({ profile }) {
         <div className="birthdayContainer">
           <img className="birthdayImg" src="assets/gift.png" alt="" />
           <span className="birthdayText">
-            <b>Person 1</b> and <b>3 other friends</b> have a birhday today.
+            <b>Person 1</b> and <b>3 other friends</b> have a birthday today.
           </span>
         </div>
         <img className="rightbarAd" src="assets/National-Burger-Day.png" alt="" />
         <h4 className="rightbarTitle">Online Friends</h4>
         <ul className="rightbarFriendList">
-          {Users.map((u) => (
-            <Online key={u.id} user={u} />
+          {Users.map((user) => (
+            <Online key={user.id} user={user} />
           ))}
         </ul>
       </>
@@ -24,7 +24,7 @@ export default function Rightbar({ profile }) {
   };
 
   const ProfileRightbar = () => {
-    const PF = process.env.React_APP_Public_Folder;
+    const publicFolder = process.env.REACT_APP_Public_Folder;
     return (
       <>
         <h4 className="rightbarTitle">User information</h4>
@@ -44,58 +44,21 @@ export default function Rightbar({ profile }) {
         </div>
         <h4 className="rightbarTitle">User friends</h4>
         <div className="rightbarFollowings">
-          <div className="rightbarFollowing">
-            <img
-              src={`${PF}person/Person 1.jpeg`}
-              alt=""
-              className="rightbarFollowingImg"
-            />
-            <span className="rightbarFollowingName">User 1</span>
-          </div>
-          <div className="rightbarFollowing">
-            <img
-              src={`${PF}person/Person 2.jpeg`}
-              alt=""
-              className="rightbarFollowingImg"
-            />
-            <span className="rightbarFollowingName">User 2</span>
-          </div>
-          <div className="rightbarFollowing">
-            <img
-              src={`${PF}person/Person 3.jpeg`}
-              alt=""
-              className="rightbarFollowingImg"
-            />
-            <span className="rightbarFollowingName">User 3</span>
-          </div>
-          <div className="rightbarFollowing">
-            <img
-              src={`${PF}person/Person 4.jpeg`}
-              alt=""
-              className="rightbarFollowingImg"
-            />
-            <span className="rightbarFollowingName">User 4</span>
-          </div>
-          <div className="rightbarFollowing">
-            <img
-              src={`${PF}person/Person 5.jpeg`}
-              alt=""
-              className="rightbarFollowingImg"
-            />
-            <span className="rightbarFollowingName">User 5</span>
-          </div>
-          <div className="rightbarFollowing">
-            <img
-              src={`${PF}person/Person 6.jpeg`}
-              alt=""
-              className="rightbarFollowingImg"
-            />
-            <span className="rightbarFollowingName">User 6</span>
-          </div>
+          {Users.map((user) => (
+            <div className="rightbarFollowing" key={user.id}>
+              <img
+                src={`${publicFolder}person/${user.profilePicture}`}
+                alt=""
+                className="rightbarFollowingImg"
+              />
+              <span className="rightbarFollowingName">{user.username}</span>
+            </div>
+          ))}
         </div>
       </>
     );
   };
+
   return (
     <div className="rightbar">
       <div className="rightbarWrapper">
